@@ -1,0 +1,21 @@
+
+infile dictionary {
+
+_column(1) 	 numeric 		 HISPANIC 		 %20f 		 "hispanic specified" 
+_column(6) 	 numeric 		 RACECEN1 		 %20f 		 "what is r's race 1st mention" 
+_column(11) 	 numeric 		 RACECEN2 		 %20f 		 "what is r's race 2nd mention" 
+_column(16) 	 numeric 		 BALLOT 		 %20f 		 "ballot used for interview" 
+_column(18) 	 numeric 		 MARITAL 		 %20f 		 "marital status" 
+_column(22) 	 numeric 		 AGE 		 %20f 		 "age of respondent" 
+_column(27) 	 numeric 		 EDUC 		 %20f 		 "highest year of school completed" 
+_column(31) 	 numeric 		 DEGREE 		 %20f 		 "r's highest degree" 
+_column(35) 	 numeric 		 SEX 		 %20f 		 "respondents sex" 
+_column(40) 	 numeric 		 REGION 		 %20f 		 "region of interview" 
+_column(42) 	 numeric 		 GRNGROUP 		 %20f 		 "member of envir group" 
+_column(47) 	 numeric 		 GRNSIGN 		 %20f 		 "sign petition on envir issue" 
+_column(52) 	 numeric 		 GRNMONEY 		 %20f 		 "give money to envir group" 
+_column(57) 	 numeric 		 GRNDEMO 		 %20f 		 "protested for envir issue" 
+_column(62) 	 numeric 		 INCOME16 		 %20f 		 "total family income" 
+_column(66) 	 numeric 		 YEAR 		 %20f 		 "GSS year for this respondent" 
+_column(71) 	 numeric 		 ID_ 		 %20f 		 "Respondent id number" 
+}
