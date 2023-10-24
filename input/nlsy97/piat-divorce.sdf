@@ -1,0 +1,53 @@
+
+
+Reference
+Number     Year  Variable Description                                              Question Name               
+-----------------------------------------------------------------------------------------------------------------
+R00001.00  1997  PUBID, YOUTH CASE IDENTIFICATION CODE                             PUBID                       
+R05322.00  1997  YOUTH, DOES R 01 LIVE WITH BOTH BIO PARENTS? (ROS ITEM)           YOUTH_BOTHBIO.01            
+R05363.00  1997  KEY!SEX, RS GENDER (SYMBOL)                                       KEY!SEX                     
+R05364.01  1997  KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)                       KEY!BDATE_M                 
+R05364.02  1997  KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)                       KEY!BDATE_Y                 
+R12358.00  1997  SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE                       CV_SAMPLE_TYPE              
+R14826.00  1997  KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)          KEY!RACE_ETHNICITY          
+R54641.00  2000  GROSS HH INCOME IN PAST YEAR                                      CV_INCOME_GROSS_YR          
+R54841.00  2000  CURRENT RESIDENCE IN URBAN OR RURAL AREA                          CV_URBAN-RURAL              
+R72278.00  2001  GROSS HH INCOME IN PAST YEAR                                      CV_INCOME_GROSS_YR          
+R72484.00  2001  CURRENT RESIDENCE IN URBAN OR RURAL AREA                          CV_URBAN-RURAL              
+S15417.00  2002  GROSS HH INCOME IN PAST YEAR                                      CV_INCOME_GROSS_YR          
+S15643.00  2002  CURRENT RESIDENCE IN URBAN OR RURAL AREA                          CV_URBAN-RURAL              
+S20115.00  2003  GROSS HH INCOME IN PAST YEAR                                      CV_INCOME_GROSS_YR          
+S20344.00  2003  CURRENT RESIDENCE IN URBAN OR RURAL AREA                          CV_URBAN-RURAL              
+S38124.00  2004  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+S38358.00  2004  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS  CV_URBAN-RURAL              
+S54128.00  2005  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+S54363.00  2005  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS  CV_URBAN-RURAL              
+S75137.00  2006  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+S75371.00  2006  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS  CV_URBAN-RURAL              
+T00141.00  2007  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+T00337.00  2007  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS  CV_URBAN-RURAL              
+T20162.00  2008  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+T20213.00  2008  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS  CV_URBAN-RURAL              
+T36065.00  2009  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+T36120.00  2009  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS  CV_URBAN-RURAL              
+T52069.00  2010  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+T52119.00  2010  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS  CV_URBAN-RURAL              
+T66567.00  2011  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+T66633.00  2011  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS  CV_URBAN-RURAL              
+T81291.00  2013  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+T81345.00  2013  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2010 CENSUS STANDARDS  CV_URBAN-RURAL              
+U00089.00  2015  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+U00150.00  2015  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2010 CENSUS STANDARDS  CV_URBAN-RURAL              
+U18455.00  2017  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+U18532.00  2017  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2010 CENSUS STANDARDS  CV_URBAN-RURAL              
+U34440.00  2019  GROSS FAMILY INCOME                                               CV_INCOME_FAMILY            
+U34519.00  2019  # BIO CHILDREN R HAS IN HOUSEHOLD (UNDER AGE 18 ONLY)             CV_BIO_CHILD_HH_U18         
+U34520.00  2019  # NON-RESIDENT BIO CHILDREN R HAS (UNDER AGE 18 ONLY)             CV_BIO_CHILD_NR_U18         
+U34536.00  2019  CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2010 CENSUS STANDARDS  CV_URBAN-RURAL              
+Z90732.00  XRND  MONTH OF FIRST MARRIAGE                                           CVC_FIRST_MARRY_DATE~M      
+Z90732.01  XRND  YEAR OF FIRST MARRIAGE                                            CVC_FIRST_MARRY_DATE~Y      
+Z90735.00  XRND  END MONTH OF FIRST MARRIAGE                                       CVC_FIRST_MARRY_END_DATE~M  
+Z90735.01  XRND  END YEAR OF FIRST MARRIAGE                                        CVC_FIRST_MARRY_END_DATE~Y  
+Z90838.00  XRND  RS HIGHEST GRADE COMPLETED                                        CVC_HGC_EVER                
+Z90839.00  XRND  HIGHEST DEGREE RECEIVED                                           CVC_HIGHEST_DEGREE_EVER     
+Z90851.00  XRND  ROUND LAST INTERVIEWED                                            CVC_RND                     

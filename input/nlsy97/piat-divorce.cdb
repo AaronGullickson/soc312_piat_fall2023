@@ -1,0 +1,1685 @@
+R00001.00    [PUBID]                                        Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             PUBID, YOUTH CASE IDENTIFICATION CODE
+ 
+COMMENT: YOUTH CASE IDENTIFICATION CODE
+ 
+       0           0
+     998           1 TO 999
+     999        1000 TO 1999
+     997        2000 TO 2999
+     996        3000 TO 3999
+     998        4000 TO 4999
+     996        5000 TO 5999
+     994        6000 TO 6999
+     994        7000 TO 7999
+     989        8000 TO 8999
+      23        9000 TO 9999
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:           9022        Mean:              4504.3
+ 
+Lead In: R72976.00[Default]
+Default Next Question: R05363.00
+--------------------------------------------------------------------------------
+R05322.00    [YOUTH_BOTHBIO.01]                             Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             YOUTH, DOES R 01 LIVE WITH BOTH BIO PARENTS? (ROS ITEM)
+ 
+COMMENT: Youth of the Responding Parent, Lives with both bio
+          Does Youth live with both biological parents?
+ 
+    4395       1 Yes
+    4589       0 No
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .49
+ 
+Lead In: R05319.00[Default]
+Default Next Question: R05323.00
+--------------------------------------------------------------------------------
+R05363.00    [KEY!SEX]                                      Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!SEX, RS GENDER (SYMBOL)
+ 
+COMMENT: Gender of Youth
+ 
+    4599       1 Male
+    4385       2 Female
+       0       0 No Information
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              2        Mean:                1.49
+ 
+Lead In: R00001.00[Default]
+Default Next Question: R05364.00
+--------------------------------------------------------------------------------
+R05364.01    [KEY!BDATE_M]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+     816           1: January
+     693           2: February
+     760           3: March
+     659           4: April
+     689           5: May
+     720           6: June
+     762           7: July
+     782           8: August
+     839           9: September
+     765          10: October
+     763          11: November
+     736          12: December
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             12        Mean:                6.56
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Lead In: None.
+Default Next Question: R05364.02
+--------------------------------------------------------------------------------
+R05364.02    [KEY!BDATE_Y]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:           1980        Max:           1984        Mean:             1982.01
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Lead In: R05364.01[Default]
+Default Next Question: R05366.00
+--------------------------------------------------------------------------------
+R12358.00    [CV_SAMPLE_TYPE]                               Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE
+ 
+Sample type: Is the respondent a member of the cross-sectional sample or the 
+oversample?
+ 
+    6748       1 Cross-sectional
+    2236       0 Oversample
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .75
+ 
+Lead In: R12338.00[Default]
+Default Next Question: R12359.00
+--------------------------------------------------------------------------------
+R14826.00    [KEY!RACE_ETHNICITY]                           Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)
+ 
+COMMENT: Combined race - ethnicity variable
+ 
+    2335       1 Black
+    1901       2 Hispanic
+      83       3 Mixed Race (Non-Hispanic)
+    4665       4 Non-Black / Non-Hispanic
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                2.79
+ 
+Lead In: R05387.00[Default]
+Default Next Question: R05389.00
+--------------------------------------------------------------------------------
+R54641.00    [CV_INCOME_GROSS_YR]                           Survey Year: 2000
+  PRIMARY VARIABLE
+
+ 
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     176           0
+      59           1 TO 1000
+      46        1001 TO 2000
+     111        2001 TO 3000
+     103        3001 TO 5000
+     305        5001 TO 10000
+     414       10001 TO 20000
+     355       20001 TO 30000
+     367       30001 TO 40000
+     251       40001 TO 50000
+     324       50001 TO 65000
+     311       65001 TO 80000
+     276       80001 TO 100000
+     244      100001 TO 150000
+      70      150001 TO 200000
+      89      200001 TO 999999: 200001+
+  -------
+    3501
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1083
+TOTAL =========>    4584   VALID SKIP(-4)    3496     NON-INTERVIEW(-5)     904
+ 
+Min:              0        Max:         270543        Mean:            49837.77
+ 
+Lead In: R54640.01[Default]
+Default Next Question: R54642.00
+--------------------------------------------------------------------------------
+R54841.00    [CV_URBAN-RURAL]                               Survey Year: 2000
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1891       0 Rural
+    5841       1 Urban
+     304       2 Unknown
+  -------
+    8036
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      30
+TOTAL =========>    8066   VALID SKIP(-4)      14     NON-INTERVIEW(-5)     904
+ 
+Min:              0        Max:              2        Mean:                  .8
+ 
+Lead In: R54742.00[Default]
+Default Next Question: R54844.00
+--------------------------------------------------------------------------------
+R72278.00    [CV_INCOME_GROSS_YR]                           Survey Year: 2001
+  PRIMARY VARIABLE
+
+ 
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     229           0
+      74           1 TO 1000
+      60        1001 TO 2000
+     118        2001 TO 3000
+     129        3001 TO 5000
+     331        5001 TO 10000
+     628       10001 TO 20000
+     495       20001 TO 30000
+     450       30001 TO 40000
+     396       40001 TO 50000
+     482       50001 TO 65000
+     445       65001 TO 80000
+     378       80001 TO 100000
+     402      100001 TO 150000
+      98      150001 TO 200000
+     129      200001 TO 999999: 200001+
+  -------
+    4844
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1049
+TOTAL =========>    5893   VALID SKIP(-4)    1989     NON-INTERVIEW(-5)    1102
+ 
+Min:              0        Max:         285805        Mean:            52665.29
+ 
+Lead In: R72277.01[Default]
+Default Next Question: R72279.00
+--------------------------------------------------------------------------------
+R72484.00    [CV_URBAN-RURAL]                               Survey Year: 2001
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1702       0 Rural
+    5842       1 Urban
+     277       2 Unknown
+  -------
+    7821
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      44
+TOTAL =========>    7865   VALID SKIP(-4)      17     NON-INTERVIEW(-5)    1102
+ 
+Min:              0        Max:              2        Mean:                 .82
+ 
+Lead In: R72379.00[Default]
+Default Next Question: R72487.00
+--------------------------------------------------------------------------------
+S15417.00    [CV_INCOME_GROSS_YR]                           Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     245           0
+      62           1 TO 1000
+      56        1001 TO 2000
+     180        2001 TO 3000
+     152        3001 TO 5000
+     450        5001 TO 10000
+     772       10001 TO 20000
+     580       20001 TO 30000
+     620       30001 TO 40000
+     450       40001 TO 50000
+     553       50001 TO 65000
+     507       65001 TO 80000
+     513       80001 TO 100000
+     544      100001 TO 150000
+     110      150001 TO 200000
+     160      200001 TO 999999: 200001+
+  -------
+    5954
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1274
+TOTAL =========>    7228   VALID SKIP(-4)     668     NON-INTERVIEW(-5)    1088
+ 
+Min:              0        Max:         267940        Mean:            52920.61
+ 
+Lead In: S15416.01[Default]
+Default Next Question: S15418.00
+--------------------------------------------------------------------------------
+S15643.00    [CV_URBAN-RURAL]                               Survey Year: 2002
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1664       0 Rural
+    5927       1 Urban
+     234       2 Unknown
+  -------
+    7825
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      44
+TOTAL =========>    7869   VALID SKIP(-4)      27     NON-INTERVIEW(-5)    1088
+ 
+Min:              0        Max:              2        Mean:                 .82
+ 
+Lead In: S15593.00[Default]
+Default Next Question: S15646.00
+--------------------------------------------------------------------------------
+S20115.00    [CV_INCOME_GROSS_YR]                           Survey Year: 2003
+  PRIMARY VARIABLE
+
+ 
+             GROSS HH INCOME IN PAST YEAR
+ 
+Gross household income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     184           0
+     118           1 TO 1000
+      76        1001 TO 2000
+     169        2001 TO 3000
+     197        3001 TO 5000
+     537        5001 TO 10000
+     891       10001 TO 20000
+     673       20001 TO 30000
+     636       30001 TO 40000
+     477       40001 TO 50000
+     620       50001 TO 65000
+     449       65001 TO 80000
+     502       80001 TO 100000
+     487      100001 TO 150000
+     122      150001 TO 200000
+     171      200001 TO 999999: 200001+
+  -------
+    6309
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1445
+TOTAL =========>    7754   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1230
+ 
+Min:              0        Max:         257697        Mean:            50279.14
+ 
+Lead In: S20114.01[Default]
+Default Next Question: S20116.00
+--------------------------------------------------------------------------------
+S20344.00    [CV_URBAN-RURAL]                               Survey Year: 2003
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1520       0 Rural
+    5934       1 Urban
+     255       2 Unknown
+  -------
+    7709
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      22
+TOTAL =========>    7731   VALID SKIP(-4)      23     NON-INTERVIEW(-5)    1230
+ 
+Min:              0        Max:              2        Mean:                 .84
+ 
+Lead In: S20292.00[Default]
+Default Next Question: S20347.00
+--------------------------------------------------------------------------------
+S38124.00    [CV_INCOME_FAMILY]                             Survey Year: 2004
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     151           0
+      78           1 TO 1000
+      71        1001 TO 2000
+     162        2001 TO 3000
+     172        3001 TO 5000
+     460        5001 TO 10000
+     783       10001 TO 20000
+     665       20001 TO 30000
+     581       30001 TO 40000
+     521       40001 TO 50000
+     570       50001 TO 65000
+     405       65001 TO 80000
+     427       80001 TO 100000
+     504      100001 TO 150000
+     178      150001 TO 200000
+     207      200001 TO 999999: 200001+
+  -------
+    5935
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1567
+TOTAL =========>    7502   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1482
+ 
+Min:              0        Max:         421368        Mean:            58585.96
+ 
+Lead In: S38123.01[Default]
+Default Next Question: S38125.00
+--------------------------------------------------------------------------------
+S38358.00    [CV_URBAN-RURAL]                               Survey Year: 2004
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1404       0 Rural
+    5884       1 Urban
+     177       2 Unknown
+  -------
+    7465
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)       1
+TOTAL =========>    7466   VALID SKIP(-4)      36     NON-INTERVIEW(-5)    1482
+ 
+Min:              0        Max:              2        Mean:                 .84
+ 
+Lead In: S38304.00[Default]
+Default Next Question: S38361.00
+--------------------------------------------------------------------------------
+S54128.00    [CV_INCOME_FAMILY]                             Survey Year: 2005
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     121           0
+      99           1 TO 1000
+      49        1001 TO 2000
+     116        2001 TO 3000
+     169        3001 TO 5000
+     414        5001 TO 10000
+     826       10001 TO 20000
+     743       20001 TO 30000
+     688       30001 TO 40000
+     534       40001 TO 50000
+     624       50001 TO 65000
+     458       65001 TO 80000
+     476       80001 TO 100000
+     461      100001 TO 150000
+     157      150001 TO 200000
+     175      200001 TO 999999: 200001+
+  -------
+    6110
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1228
+TOTAL =========>    7338   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1646
+ 
+Min:              0        Max:         343969        Mean:            55110.96
+ 
+Lead In: S54127.00[Default]
+Default Next Question: S54129.00
+--------------------------------------------------------------------------------
+S54363.00    [CV_URBAN-RURAL]                               Survey Year: 2005
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1337       0 Rural
+    5798       1 Urban
+     145       2 Unknown
+  -------
+    7280
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      21
+TOTAL =========>    7301   VALID SKIP(-4)      37     NON-INTERVIEW(-5)    1646
+ 
+Min:              0        Max:              2        Mean:                 .84
+ 
+Lead In: S54307.00[Default]
+Default Next Question: S54366.00
+--------------------------------------------------------------------------------
+S75137.00    [CV_INCOME_FAMILY]                             Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     138           0
+      83           1 TO 1000
+      58        1001 TO 2000
+     124        2001 TO 3000
+     136        3001 TO 5000
+     356        5001 TO 10000
+     822       10001 TO 20000
+     721       20001 TO 30000
+     705       30001 TO 40000
+     550       40001 TO 50000
+     628       50001 TO 65000
+     522       65001 TO 80000
+     421       80001 TO 100000
+     519      100001 TO 150000
+     178      150001 TO 200000
+     186      200001 TO 999999: 200001+
+  -------
+    6147
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1412
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:         321273        Mean:            56341.96
+ 
+Lead In: S75136.00[Default]
+Default Next Question: S75138.00
+--------------------------------------------------------------------------------
+S75371.00    [CV_URBAN-RURAL]                               Survey Year: 2006
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1410       0 Rural
+    5908       1 Urban
+     185       2 Unknown
+  -------
+    7503
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      17
+TOTAL =========>    7520   VALID SKIP(-4)      39     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:              2        Mean:                 .84
+ 
+Lead In: S75258.00[Default]
+Default Next Question: S75374.00
+--------------------------------------------------------------------------------
+T00141.00    [CV_INCOME_FAMILY]                             Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     115           0
+      76           1 TO 1000
+      50        1001 TO 2000
+      97        2001 TO 3000
+      84        3001 TO 5000
+     343        5001 TO 10000
+     699       10001 TO 20000
+     729       20001 TO 30000
+     741       30001 TO 40000
+     625       40001 TO 50000
+     729       50001 TO 65000
+     586       65001 TO 80000
+     487       80001 TO 100000
+     518      100001 TO 150000
+     167      150001 TO 200000
+     189      200001 TO 999999: 200001+
+  -------
+    6235
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1183
+TOTAL =========>    7418   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1566
+ 
+Min:              0        Max:         279104        Mean:            57382.98
+ 
+Lead In: T00140.00[Default]
+Default Next Question: T00142.00
+--------------------------------------------------------------------------------
+T00337.00    [CV_URBAN-RURAL]                               Survey Year: 2007
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1382       0 Rural
+    5680       1 Urban
+     282       2 Unknown
+  -------
+    7344
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      27
+TOTAL =========>    7371   VALID SKIP(-4)      47     NON-INTERVIEW(-5)    1566
+ 
+Min:              0        Max:              2        Mean:                 .85
+ 
+Lead In: T00261.00[Default]
+Default Next Question: T00340.00
+--------------------------------------------------------------------------------
+T20162.00    [CV_INCOME_FAMILY]                             Survey Year: 2008
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     167           0
+      68           1 TO 1000
+      36        1001 TO 2000
+      85        2001 TO 3000
+     103        3001 TO 5000
+     305        5001 TO 10000
+     694       10001 TO 20000
+     685       20001 TO 30000
+     757       30001 TO 40000
+     633       40001 TO 50000
+     762       50001 TO 65000
+     651       65001 TO 80000
+     491       80001 TO 100000
+     594      100001 TO 150000
+     183      150001 TO 200000
+     211      200001 TO 999999: 200001+
+  -------
+    6425
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1065
+TOTAL =========>    7490   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1494
+ 
+Min:              0        Max:         313703        Mean:            60200.26
+ 
+Lead In: T20161.00[Default]
+Default Next Question: T20163.00
+--------------------------------------------------------------------------------
+T20213.00    [CV_URBAN-RURAL]                               Survey Year: 2008
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1320       0 Rural
+    5765       1 Urban
+     338       2 Unknown
+  -------
+    7423
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      16
+TOTAL =========>    7439   VALID SKIP(-4)      51     NON-INTERVIEW(-5)    1494
+ 
+Min:              0        Max:              2        Mean:                 .87
+ 
+Lead In: T20210.00[Default]
+Default Next Question: T20216.00
+--------------------------------------------------------------------------------
+T36065.00    [CV_INCOME_FAMILY]                             Survey Year: 2009
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     161           0
+      78           1 TO 1000
+      56        1001 TO 2000
+      71        2001 TO 3000
+      74        3001 TO 5000
+     299        5001 TO 10000
+     617       10001 TO 20000
+     761       20001 TO 30000
+     727       30001 TO 40000
+     609       40001 TO 50000
+     873       50001 TO 65000
+     742       65001 TO 80000
+     613       80001 TO 100000
+     639      100001 TO 150000
+     154      150001 TO 200000
+     185      200001 TO 999999: 200001+
+  -------
+    6659
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     900
+TOTAL =========>    7559   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:         313365        Mean:            60741.91
+ 
+Lead In: T36064.00[Default]
+Default Next Question: T36066.00
+--------------------------------------------------------------------------------
+T36120.00    [CV_URBAN-RURAL]                               Survey Year: 2009
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1193       0 Rural
+    5705       1 Urban
+     600       2 Unknown
+  -------
+    7498
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      12
+TOTAL =========>    7510   VALID SKIP(-4)      49     NON-INTERVIEW(-5)    1425
+ 
+Min:              0        Max:              2        Mean:                 .92
+ 
+Lead In: T36117.00[Default]
+Default Next Question: T36123.00
+--------------------------------------------------------------------------------
+T52069.00    [CV_INCOME_FAMILY]                             Survey Year: 2010
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     188           0
+     106           1 TO 1000
+      49        1001 TO 2000
+      68        2001 TO 3000
+      98        3001 TO 5000
+     253        5001 TO 10000
+     641       10001 TO 20000
+     655       20001 TO 30000
+     756       30001 TO 40000
+     655       40001 TO 50000
+     811       50001 TO 65000
+     667       65001 TO 80000
+     576       80001 TO 100000
+     651      100001 TO 150000
+     161      150001 TO 200000
+     192      200001 TO 999999: 200001+
+  -------
+    6527
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     952
+TOTAL =========>    7479   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1505
+ 
+Min:              0        Max:         290810        Mean:             60274.6
+ 
+Lead In: T52068.00[Default]
+Default Next Question: T52070.00
+--------------------------------------------------------------------------------
+T52119.00    [CV_URBAN-RURAL]                               Survey Year: 2010
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1482       0 Rural
+    5863       1 Urban
+      70       2 Unknown
+  -------
+    7415
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      10
+TOTAL =========>    7425   VALID SKIP(-4)      54     NON-INTERVIEW(-5)    1505
+ 
+Min:              0        Max:              2        Mean:                 .81
+ 
+Lead In: T52118.00[Default]
+Default Next Question: T52122.00
+--------------------------------------------------------------------------------
+T66567.00    [CV_INCOME_FAMILY]                             Survey Year: 2011
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     177           0
+      81           1 TO 1000
+      39        1001 TO 2000
+      41        2001 TO 3000
+      70        3001 TO 5000
+     246        5001 TO 10000
+     594       10001 TO 20000
+     692       20001 TO 30000
+     735       30001 TO 40000
+     637       40001 TO 50000
+     813       50001 TO 65000
+     697       65001 TO 80000
+     647       80001 TO 100000
+     697      100001 TO 150000
+     155      150001 TO 200000
+     207      200001 TO 999999: 200001+
+  -------
+    6528
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     895
+TOTAL =========>    7423   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1561
+ 
+Min:              0        Max:         316618        Mean:            63160.07
+ 
+Lead In: T66566.00[Default]
+Default Next Question: T66568.00
+--------------------------------------------------------------------------------
+T66633.00    [CV_URBAN-RURAL]                               Survey Year: 2011
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2000 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1503       0 Rural
+    5800       1 Urban
+      44       2 Unknown
+  -------
+    7347
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      10
+TOTAL =========>    7357   VALID SKIP(-4)      66     NON-INTERVIEW(-5)    1561
+ 
+Min:              0        Max:              2        Mean:                  .8
+ 
+Lead In: T66632.00[Default]
+Default Next Question: T66636.00
+--------------------------------------------------------------------------------
+T81291.00    [CV_INCOME_FAMILY]                             Survey Year: 2013
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     270           0
+      52           1 TO 1000
+      27        1001 TO 2000
+      59        2001 TO 3000
+      75        3001 TO 5000
+     251        5001 TO 10000
+     491       10001 TO 20000
+     583       20001 TO 30000
+     615       30001 TO 40000
+     618       40001 TO 50000
+     774       50001 TO 65000
+     722       65001 TO 80000
+     695       80001 TO 100000
+     786      100001 TO 150000
+     227      150001 TO 200000
+     227      200001 TO 999999: 200001+
+  -------
+    6472
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     668
+TOTAL =========>    7140   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1844
+ 
+Min:              0        Max:         325468        Mean:            67520.76
+ 
+Lead In: T81290.00[Default]
+Default Next Question: T81292.00
+--------------------------------------------------------------------------------
+T81345.00    [CV_URBAN-RURAL]                               Survey Year: 2013
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2010 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1118       0 Rural
+    5888       1 Urban
+      56       2 Unknown
+  -------
+    7062
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      13
+TOTAL =========>    7075   VALID SKIP(-4)      65     NON-INTERVIEW(-5)    1844
+ 
+Min:              0        Max:              2        Mean:                 .85
+ 
+Lead In: T81344.00[Default]
+Default Next Question: T81348.00
+--------------------------------------------------------------------------------
+U00089.00    [CV_INCOME_FAMILY]                             Survey Year: 2015
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     335           0
+      45           1 TO 1000
+      25        1001 TO 2000
+      58        2001 TO 3000
+      58        3001 TO 5000
+     208        5001 TO 10000
+     473       10001 TO 20000
+     480       20001 TO 30000
+     594       30001 TO 40000
+     500       40001 TO 50000
+     663       50001 TO 65000
+     708       65001 TO 80000
+     700       80001 TO 100000
+     882      100001 TO 150000
+     252      150001 TO 200000
+     359      200001 TO 999999: 200001+
+  -------
+    6340
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     763
+TOTAL =========>    7103   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    1881
+ 
+Min:              0        Max:         329331        Mean:            73961.56
+ 
+Lead In: U00088.00[Default]
+Default Next Question: U00090.00
+--------------------------------------------------------------------------------
+U00150.00    [CV_URBAN-RURAL]                               Survey Year: 2015
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2010 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1119       0 Rural
+    5862       1 Urban
+      42       2 Unknown
+  -------
+    7023
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      12
+TOTAL =========>    7035   VALID SKIP(-4)      68     NON-INTERVIEW(-5)    1881
+ 
+Min:              0        Max:              2        Mean:                 .85
+ 
+Lead In: U00149.02[Default]
+Default Next Question: U00153.00
+--------------------------------------------------------------------------------
+U18455.00    [CV_INCOME_FAMILY]                             Survey Year: 2017
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     302           0
+      37           1 TO 1000
+      27        1001 TO 2000
+      43        2001 TO 3000
+      53        3001 TO 5000
+     165        5001 TO 10000
+     381       10001 TO 20000
+     390       20001 TO 30000
+     520       30001 TO 40000
+     446       40001 TO 50000
+     688       50001 TO 65000
+     651       65001 TO 80000
+     670       80001 TO 100000
+     992      100001 TO 150000
+     364      150001 TO 200000
+     333      200001 TO 999999: 200001+
+  -------
+    6062
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     672
+TOTAL =========>    6734   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2250
+ 
+Min:              0        Max:         469576        Mean:            82993.74
+ 
+Lead In: U18454.00[Default]
+Default Next Question: U18456.00
+--------------------------------------------------------------------------------
+U18532.00    [CV_URBAN-RURAL]                               Survey Year: 2017
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2010 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1137       0 Rural
+    5481       1 Urban
+      36       2 Unknown
+  -------
+    6654
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      11
+TOTAL =========>    6665   VALID SKIP(-4)      69     NON-INTERVIEW(-5)    2250
+ 
+Min:              0        Max:              2        Mean:                 .83
+ 
+Lead In: U18529.00[Default]
+Default Next Question: U18535.00
+--------------------------------------------------------------------------------
+U34440.00    [CV_INCOME_FAMILY]                             Survey Year: 2019
+  PRIMARY VARIABLE
+
+ 
+             GROSS FAMILY INCOME
+ 
+Gross family income in the previous year.
+ 
+NOTE: /*Topcoded at the 2% level.  Truncated values are applied to the top 2 
+percent of respondents with valid non-missing responses.  The average value of 
+the top 2 percent of cases is used as the value.  Negative values of -1, -2, -3,
+-4, or -5 do not reflect negative monetary amounts; these numbers represent 
+standard NLSY97 codes.*/
+ 
+       0     -999999 TO -3000: < -2999
+       0       -2999 TO -2000
+       0       -1999 TO -1000
+       0        -999 TO -1
+     258           0
+      13           1 TO 1000
+       9        1001 TO 2000
+      29        2001 TO 3000
+      45        3001 TO 5000
+     108        5001 TO 10000
+     245       10001 TO 20000
+     336       20001 TO 30000
+     407       30001 TO 40000
+     378       40001 TO 50000
+     582       50001 TO 65000
+     552       65001 TO 80000
+     643       80001 TO 100000
+    1005      100001 TO 150000
+     416      150001 TO 200000
+     389      200001 TO 999999: 200001+
+  -------
+    5415
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)    1532
+TOTAL =========>    6947   VALID SKIP(-4)       0     NON-INTERVIEW(-5)    2037
+ 
+Min:              0        Max:         467966        Mean:            92538.32
+ 
+Lead In: U34439.00[Default]
+Default Next Question: U34441.00
+--------------------------------------------------------------------------------
+U34519.00    [CV_BIO_CHILD_HH_U18]                          Survey Year: 2019
+  PRIMARY VARIABLE
+
+ 
+             # BIO CHILDREN R HAS IN HOUSEHOLD (UNDER AGE 18 ONLY)
+ 
+Number of biological children under age 18 residing in the household as of the 
+survey date.
+ 
+Note: Rs without any biological children are assigned a valid skip (-4).
+Note: Includes only children under age 18.
+ 
+     828           0
+    1404           1
+    1728           2
+     801           3
+     265           4
+      70           5
+      24           6
+       5           7
+       2           8
+       1           9
+       0          10 TO 999: 10+
+  -------
+    5128
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    5128   VALID SKIP(-4)    1819     NON-INTERVIEW(-5)    2037
+ 
+Min:              0        Max:              9        Mean:                1.73
+ 
+Lead In: U34516.00[Default]
+Default Next Question: U34520.00
+--------------------------------------------------------------------------------
+U34520.00    [CV_BIO_CHILD_NR_U18]                          Survey Year: 2019
+  PRIMARY VARIABLE
+
+ 
+             # NON-RESIDENT BIO CHILDREN R HAS (UNDER AGE 18 ONLY)
+ 
+Number of biological children under age 18 but not residing in the household as 
+of the survey date.
+ 
+Note: Rs without any biological children are assigned a valid skip (-4).
+Note: Includes only children under age 18.
+ 
+    4157           0
+     525           1
+     255           2
+     121           3
+      37           4
+      17           5
+      12           6
+       3           7
+       0           8
+       1           9
+       0          10 TO 999: 10+
+  -------
+    5128
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    5128   VALID SKIP(-4)    1819     NON-INTERVIEW(-5)    2037
+ 
+Min:              0        Max:              9        Mean:                 .34
+ 
+Lead In: U34519.00[Default]
+Default Next Question: U34521.00
+--------------------------------------------------------------------------------
+U34536.00    [CV_URBAN-RURAL]                               Survey Year: 2019
+  PRIMARY VARIABLE
+
+ 
+             CURRENT RESIDENCE IN URBAN OR RURAL AREA - 2010 CENSUS STANDARDS
+ 
+Residence in an urban or a rural area as of the survey date.
+ 
+COMMENT: A valid skip (-4) indicates a residence outside of the United States.
+ 
+    1236       0 Rural
+    5545       1 Urban
+      83       2 Unknown
+  -------
+    6864
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      11
+TOTAL =========>    6875   VALID SKIP(-4)      72     NON-INTERVIEW(-5)    2037
+ 
+Min:              0        Max:              2        Mean:                 .83
+ 
+Lead In: U34533.00[Default]
+Default Next Question: U34537.00
+--------------------------------------------------------------------------------
+Z90732.00    [CVC_FIRST_MARRY_DATE~M]                       Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             MONTH OF FIRST MARRIAGE
+ 
+Date of first marriage. This variable is created for all respondents regardless 
+of interview status in the current round; CVC_RND provides the actual round of 
+the respondent's most recent interview.
+ 
+     253           1: January
+     280           2: February
+     326           3: March
+     348           4: April
+     486           5: May
+     572           6: June
+     492           7: July
+     535           8: August
+     466           9: September
+     483          10: October
+     309          11: November
+     313          12: December
+  -------
+    4863
+ 
+Refusal(-1)            1
+Don't Know(-2)         5
+Invalid Skip(-3)      93
+TOTAL =========>    4962   VALID SKIP(-4)    4022     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             12        Mean:                6.78
+ 
+Earliest (NonMissing): JULY/1995
+Latest   (NonMissing): FEBRUARY/2020
+ 
+Lead In: Z90731.00[Default]
+Default Next Question: Z90732.01
+--------------------------------------------------------------------------------
+Z90732.01    [CVC_FIRST_MARRY_DATE~Y]                       Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             YEAR OF FIRST MARRIAGE
+ 
+Date of first marriage. This variable is created for all respondents regardless 
+of interview status in the current round; CVC_RND provides the actual round of 
+the respondent's most recent interview.
+ 
+      17        1980 TO 1997
+     116        1998 TO 1999
+     373        2000 TO 2001
+     542        2002 TO 2003
+     704        2004 TO 2005
+     738        2006 TO 2007
+     642        2008 TO 2009
+     541        2010 TO 2011
+     452        2012 TO 2013
+     343        2014 TO 2015
+     235        2016 TO 2017
+     165        2018 TO 2019
+       3        2020 TO 2021
+  -------
+    4871
+ 
+Refusal(-1)            1
+Don't Know(-2)         4
+Invalid Skip(-3)      86
+TOTAL =========>    4962   VALID SKIP(-4)    4022     NON-INTERVIEW(-5)       0
+ 
+Min:           1995        Max:           2020        Mean:             2007.82
+ 
+Earliest (NonMissing): JULY/1995
+Latest   (NonMissing): FEBRUARY/2020
+ 
+Lead In: Z90732.00[Default]
+Default Next Question: Z90733.00
+--------------------------------------------------------------------------------
+Z90735.00    [CVC_FIRST_MARRY_END_DATE~M]                   Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             END MONTH OF FIRST MARRIAGE
+ 
+Date that first marriage ended. This variable is created for all respondents 
+regardless of interview status in the current round; CVC_RND provides the actual
+round of the respondent's most recent interview.
+ 
+     114           1: January
+     111           2: February
+     127           3: March
+     115           4: April
+      99           5: May
+     128           6: June
+     107           7: July
+     123           8: August
+     106           9: September
+     128          10: October
+     114          11: November
+     117          12: December
+  -------
+    1389
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     178
+TOTAL =========>    1567   VALID SKIP(-4)    7417     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             12        Mean:                6.53
+ 
+Earliest (NonMissing): DECEMBER/1998
+Latest   (NonMissing): JUNE/2020
+ 
+Lead In: Z90734.00[Default]
+Default Next Question: Z90735.01
+--------------------------------------------------------------------------------
+Z90735.01    [CVC_FIRST_MARRY_END_DATE~Y]                   Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             END YEAR OF FIRST MARRIAGE
+ 
+Date that first marriage ended. This variable is created for all respondents 
+regardless of interview status in the current round; CVC_RND provides the actual
+round of the respondent's most recent interview.
+ 
+       0        1980 TO 1997
+       3        1998 TO 1999
+      19        2000 TO 2001
+      38        2002 TO 2003
+     118        2004 TO 2005
+     177        2006 TO 2007
+     208        2008 TO 2009
+     203        2010 TO 2011
+     182        2012 TO 2013
+     149        2014 TO 2015
+     133        2016 TO 2017
+     170        2018 TO 2019
+       6        2020 TO 2021
+  -------
+    1406
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     161
+TOTAL =========>    1567   VALID SKIP(-4)    7417     NON-INTERVIEW(-5)       0
+ 
+Min:           1998        Max:           2020        Mean:             2011.11
+ 
+Earliest (NonMissing): DECEMBER/1998
+Latest   (NonMissing): JUNE/2020
+ 
+Lead In: Z90735.00[Default]
+Default Next Question: Z90736.00
+--------------------------------------------------------------------------------
+Z90838.00    [CVC_HGC_EVER]                                 Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             RS HIGHEST GRADE COMPLETED
+ 
+CUMULATIVE VARIABLE: The highest grade completed. This variable is created for 
+all respondents regardless of interview status in the current round; CVC_RND 
+provides the actual round of the respondent's most recent interview.
+ 
+       1       0 None
+       0       1 1st grade
+       1       2 2nd grade
+       0       3 3rd grade
+       0       4 4th grade
+       5       5 5th grade
+      29       6 6th grade
+      56       7 7th grade
+     293       8 8th grade
+     442       9 9th grade
+     502      10 10th grade
+     544      11 11th grade
+    1874      12 12th grade
+     698      13 1st year college
+     986      14 2nd year college
+     515      15 3rd year college
+    1314      16 4th year college
+     470      17 5th year college
+     490      18 6th year college
+     259      19 7th year college
+     387      20 8th year college or more
+      18      95 Ungraded
+  -------
+    8884
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     100
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             95        Mean:               13.87
+ 
+Lead In: Z90837.00[Default]
+Default Next Question: Z90839.00
+--------------------------------------------------------------------------------
+Z90839.00    [CVC_HIGHEST_DEGREE_EVER]                      Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             HIGHEST DEGREE RECEIVED
+ 
+CUMULATIVE VARIABLE: The highest degree received. This variable is created for 
+all respondents regardless of interview status in the current round; CVC_RND 
+provides the actual round of the respondent's most recent interview.
+ 
+     911       0 None
+    1157       1 GED
+    3598       2 High school diploma (Regular 12 year program)
+     757       3 Associate/Junior college (AA)
+    1691       4 Bachelor's degree (BA, BS)
+     652       5 Master's degree (MA, MS)
+      60       6 PhD
+     127       7 Professional degree (DDS, JD, MD)
+  -------
+    8953
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)      31
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              7        Mean:                2.45
+ 
+Lead In: Z90838.00[Default]
+Default Next Question: Z90840.00
+--------------------------------------------------------------------------------
+Z90851.00    [CVC_RND]                                      Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             ROUND LAST INTERVIEWED
+ 
+Round of R's last interview as of the latest round of the survey.
+ 
+      90       1 Round 1
+      32       2 Round 2
+      41       3 Round 3
+      39       4 Round 4
+      54       5 Round 5
+      68       6 Round 6
+      68       7 Round 7
+      68       8 Round 8
+      58       9 Round 9
+      63      10 Round 10
+      48      11 Round 11
+      72      12 Round 12
+      92      13 Round 13
+      70      14 Round 14
+     185      15 Round 15
+     185      16 Round 16
+     340      17 Round 17
+     464      18 Round 18
+    6947      19 Round 19
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             19        Mean:               17.67
+ 
+Lead In: Z90850.00[Default]
+Default Next Question: Z90852.00
